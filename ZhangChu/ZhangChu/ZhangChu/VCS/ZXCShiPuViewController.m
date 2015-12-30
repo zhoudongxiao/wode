@@ -83,6 +83,11 @@
         
         [self doneLoadData];
         
+//        // 3. 解析所有用到的信息
+//        [self parseData:responseObject];
+//        
+//        [self doneLoadData];
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [self doneLoadData];
     }];
