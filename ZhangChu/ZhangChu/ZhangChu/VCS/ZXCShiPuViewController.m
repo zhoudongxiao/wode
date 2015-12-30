@@ -84,9 +84,9 @@
         [self doneLoadData];
         
 //        // 3. 解析所有用到的信息
-//        [self parseData:responseObject];
-//        
-//        [self doneLoadData];
+        [self parseData:responseObject];
+        
+        [self doneLoadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [self doneLoadData];
@@ -99,6 +99,9 @@
     [manager POST:MAIN_URL parameters:@{@"methodName": @"HomeSerial", @"page": @"1", @"serial_id": @"1", @"size": @"10"} success:^(AFHTTPRequestOperation *  operation, id responseObject) {
         //请求成功,解析
         [self parsePageData:responseObject];
+        
+        
+        
         
     } failure:^ (AFHTTPRequestOperation * operation, NSError * error) {
         
