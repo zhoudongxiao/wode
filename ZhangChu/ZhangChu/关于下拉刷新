@@ -1,0 +1,13 @@
+
+下拉刷新有系统提供的方法 UIRefreshControl
+但是这个功能有限, 1. 不能同时添加tableHeader和刷新
+               2. 不能实现上拉加载
+               3. 只能给tableView添加
+
+刷新的时候, 更多情况下需要自己封装
+MJRefresh
+集成简单, 轻便, 有BUG, 大的工程里, 不推荐使用, 小的工程可以去使用
+
+
+EGORefreshControl
+集成麻烦, 老字号
